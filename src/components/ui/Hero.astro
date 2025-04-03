@@ -8,11 +8,11 @@ const {fullName, title, institute, profilePicture} = Astro.props
 ---
 <div class='flex-1'>
   <h1 class='text-4xl font-bold mb-4'>
-    Hola! Soy <span class='text-secondary'>{fullName}</span>
+    ¡Bienvenido/a a mi portfolio!
   </h1>
   <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
   <p class='text-lg mb-6'>
-    Soy una desarrolladora de software con enfoque en aplicaciones móviles y web.
+    Soy <span class='text-secondary'>{fullName}</span>, desarrolladora de software con enfoque en aplicaciones móviles y web.
     Recientemente finalicé mis estudios en desarrollo de software y actualmente estoy trabajando en CineAtmos, una app móvil para descubrir y gestionar películas y series.
     Me encanta explorar nuevas herramientas para seguir aprendiendo y mejorando cada día.
   </p>

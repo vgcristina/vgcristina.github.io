@@ -6,13 +6,14 @@ export const experiences = [
 		location: '',
 		description: '',
 	},
-	// {
-	// 	company: 'Radium Institute (Institut du Radium)',
-	// 	time: '1914 - 1934',
-	// 	title: 'Director',
-	// 	location: 'Paris, France',
-	// 	description: 'Led groundbreaking studies on radioactivity and mentored future Nobel Prize laureates.',
-	// },
+	
+	 {
+	company: 'Radium Institute (Institut du Radium)',
+	time: '1914 - 1934',
+	title: 'Director',
+	location: 'Paris, France',
+	description: 'Led groundbreaking studies on radioactivity and mentored future Nobel Prize laureates.',
+	},
 ];
 
 export const education = [
