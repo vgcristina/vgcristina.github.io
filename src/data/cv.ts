@@ -7,13 +7,13 @@ export const experiences = [
 		description: '',
 	},
 	
-	 {
-	company: 'Radium Institute (Institut du Radium)',
-	time: '1914 - 1934',
-	title: 'Director',
-	location: 'Paris, France',
-	description: 'Led groundbreaking studies on radioactivity and mentored future Nobel Prize laureates.',
-	},
+	{
+		company: 'Guadaltel',
+		time: 'Sept 2024 - dic 2024',
+		title: 'Desarrolladora de software en prácticas',
+		location: 'Sevilla, España',
+		description: 'Desarrollo de aplicaciones web utilizando **Java**, **Spring Boot**, **SQL (Oracle)**, **JSF (PrimeFaces)** y **CSS**.\nTrabajo en un entorno de desarrollo basado en **Linux** para la implementación y pruebas de aplicaciones.'
+	  }
 ];
 
 export const education = [
@@ -24,13 +24,22 @@ export const education = [
 		location: '',
 		description: '',
 	},
-	// {
-	// 	school: 'University of Paris',
-	// 	time: '1891 - 1895',
-	// 	degree: 'Master’s in Physics and Mathematics',
-	// 	location: 'Paris, France',
-	// 	description: 'Graduated at the top of her class in physics and second in mathematics.',
-	// },
+
+	{
+		school: 'IES Ponce de León',
+		time: '2018',
+		degree: 'Técnico Superior de Laboratorio Clínico y Biomédico',
+		location: 'Sevilla, España',
+		description: 'FP Superior de ciencias y sanidad',
+	},
+
+	{
+		school: 'Ilerna',
+		time: '2025',
+		degree: 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma',
+		location: 'Sevilla, España',
+		description: 'FP Superior de desarrollo de software',
+	},
 ];
 
 export const skills = [
