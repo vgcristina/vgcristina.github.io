@@ -1,5 +1,5 @@
 export const profile = {
-	fullName: 'Your Name',
+	fullName: 'Cristina Varela',
 	title: '',
 	institute: '',
 	author_name: '', // Author name to be highlighted in the papers section
