@@ -46,6 +46,7 @@ export const courses = [
 	{
 		school: '',
 		time: '',
+		hours: '',
 		degree: '',
 		location: '',
 		description: '',
@@ -54,7 +55,8 @@ export const courses = [
 
 	{
 		school: 'Udemy',
-		time: '2025 - 150 horas',
+		time: '2025',
+		hours: '150 horas',
 		degree: 'Java de cero a experto',
 		location: 'Online',
 		description: '',
@@ -63,7 +65,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 14 horas',
+		time: '2024',
+		hours: '14 horas',
 		degree: 'Hibernate y JPA',
 		location: 'Online',
 		description: '',
@@ -72,7 +75,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 12 horas',
+		time: '2024',
+		hours: '12 horas',
 		degree: 'Desarrollo de una API REST con Spring Boot',
 		location: 'Online',
 		description: '',
@@ -81,7 +85,8 @@ export const courses = [
 	
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 9 horas',
+		time: '2024',
+		hours: '9 horas',
 		degree: 'Clean Code',
 		location: 'Online',
 		description: '',
@@ -90,7 +95,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 8 horas',
+		time: '2024',
+		hours: '8 horas',
 		degree: 'Desarrollo web con Java EE/Jakarta EE',
 		location: 'Online',
 		description: '',
@@ -99,7 +105,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 8 horas',
+		time: '2024',
+		hours: '8 horas',
 		degree: 'Fundamenos de JavaScript',
 		location: 'Online',
 		description: '',
@@ -108,7 +115,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 7 horas',
+		time: '2024',
+		hours: '7 horas',
 		degree: 'Git',
 		location: 'Online',
 		description: '',
@@ -117,7 +125,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 6 horas',
+		time: '2024',
+		hours: '6 horas',
 		degree: 'Proyectos Java con Apache Maven',
 		location: 'Online',
 		description: '',
@@ -126,7 +135,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 5 horas',
+		time: '2024',
+		hours: '5 horas',
 		degree: 'Testing en Java con JUnit 5',
 		location: 'Online',
 		description: '',
@@ -135,7 +145,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 4 horas',
+		time: '2024',
+		hours: '4 horas',
 		degree: 'Introducción a Docker',
 		location: 'Online',
 		description: '',
@@ -144,7 +155,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 1 hora',
+		time: '2024',
+		hours: '1 hora',
 		degree: 'Desarrollo CRUD con Java EE',
 		location: 'Online',
 		description: '',
@@ -153,7 +165,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 1 hora',
+		time: '2024',
+		hours: '1 hora',
 		degree: 'Conversión de atributos con Hibernate y JPA',
 		location: 'Online',
 		description: '',
@@ -162,7 +175,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 1 hora',
+		time: '2024',
+		hours: '1 hora',
 		degree: 'Documentación con Javadoc',
 		location: 'Online',
 		description: '',
@@ -171,7 +185,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 1 hora',
+		time: '2024',
+		hours: '1 hora',
 		degree: 'Documentación técnica con GitHub y Markdown',
 		location: 'Online',
 		description: '',
@@ -180,7 +195,8 @@ export const courses = [
 
 	{
 		school: 'OpenWebinars',
-		time: '2024 - 15 horas',
+		time: '2024',
+		hours: '15 horas',
 		degree: 'Desarrollo seguro',
 		location: 'Online',
 		description: '',
@@ -188,20 +204,13 @@ export const courses = [
 
 	{
 		school: 'EOI',
-		time: '2019 - 330 horas',
+		time: '2019',
+		hours: '330 horas',
 		degree: 'Creación de aplicaciones móviles en IOS y Android',
 		location: 'Sevilla, España',
 		description: '',
 	},
 
-
-	{
-		school: '',
-		time: '',
-		degree: '',
-		location: '',
-		description: '',
-	},
 ];
 
 export const skills = [
