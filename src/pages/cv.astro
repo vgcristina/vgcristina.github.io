@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { experiences, education, skills, publications } from '../data/cv'
+import { experiences, education, skills, courses } from '../data/cv'
 import CvTimeline from '@/components/ui/CvTimeline.astro'
 
 import type { Experience, Education, Publication } from '../types/cv'
@@ -9,7 +9,7 @@ import PublicationsList from '@/components/ui/PublicationsList.astro'
 
 let orderdExperiences: Experience[] = []
 let orderdEducations: Education[] = []
-let orderedPublications: Publication[] = []
+let orderedCourses: Course[] = []
 
 const orderElement = <T extends { time: string }>(a: T, b: T) => {
   const presentValues = ['present', 'now', 'current', 'today']
@@ -38,8 +38,8 @@ if (education.length > 0) {
 	})
 }
 
-if (publications.length > 0) {
-	orderedPublications = publications.sort((a, b) => {
+if (courses.length > 0) {
+	orderedCourses = courses.sort((a, b) => {
 		return orderElement(a, b)
 	})
 }
@@ -69,12 +69,12 @@ if (publications.length > 0) {
 	}
 
 	{
-		orderdEducations.length > 0 && (
+		orderedCourses.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
 					Cursos
 				</h2>
-				<CvTimeline elements={orderdEducations} colored={true} />
+				<CvTimeline elements={orderedCourses} colored={true} />
 			</section>
 		)
 	}	

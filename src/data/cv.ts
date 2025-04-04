@@ -12,7 +12,7 @@ export const experiences = [
 		time: 'Sept 2024 - dic 2024',
 		title: 'Desarrolladora de software en prácticas',
 		location: 'Sevilla, España',
-		description: 'Desarrollo de aplicaciones web utilizando document.write(("Java").bold()), **Spring Boot**, **SQL (Oracle)**, **JSF (PrimeFaces)** y **CSS**.\nTrabajo en un entorno de desarrollo basado en **Linux** para la implementación y pruebas de aplicaciones.'
+		description: 'Desarrollo de aplicaciones web en un entorno de desarrollo basado en Linux, utilizando Java, Spring Boot, SQL (Oracle), JSF (PrimeFaces) y CSS.'
 	  }
 ];
 
@@ -26,19 +26,19 @@ export const education = [
 	},
 
 	{
-		school: 'IES Ponce de León',
-		time: '2018',
-		degree: 'Técnico Superior de Laboratorio Clínico y Biomédico',
-		location: 'Sevilla, España',
-		description: 'FP Superior de ciencias y sanidad',
-	},
-
-	{
 		school: 'Ilerna',
 		time: '2025',
 		degree: 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma',
 		location: 'Sevilla, España',
 		description: 'FP Superior de desarrollo de software',
+	},
+
+	{
+		school: 'IES Ponce de León',
+		time: '2018',
+		degree: 'Técnico Superior de Laboratorio Clínico y Biomédico',
+		location: 'Sevilla, España',
+		description: 'FP Superior de ciencias y sanidad',
 	},
 ];
 
