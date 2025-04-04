@@ -14,6 +14,16 @@ export interface Education {
   description?: string;
 }
 
+
+export interface Course {
+  school: string;
+  time: string;
+  hours: string;
+  degree: string;
+  location?: string;
+  description?: string;
+}
+
 export interface Skill {
   title: string;
   description: string;
