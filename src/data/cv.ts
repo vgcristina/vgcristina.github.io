@@ -12,7 +12,7 @@ export const experiences = [
 		time: 'Sept 2024 - dic 2024',
 		title: 'Desarrolladora de software en prácticas',
 		location: 'Sevilla, España',
-		description: 'Desarrollo de aplicaciones web utilizando **Java**, **Spring Boot**, **SQL (Oracle)**, **JSF (PrimeFaces)** y **CSS**.\nTrabajo en un entorno de desarrollo basado en **Linux** para la implementación y pruebas de aplicaciones.'
+		description: 'Desarrollo de aplicaciones web utilizando <b>Java</b>, **Spring Boot**, **SQL (Oracle)**, **JSF (PrimeFaces)** y **CSS**.\nTrabajo en un entorno de desarrollo basado en **Linux** para la implementación y pruebas de aplicaciones.'
 	  }
 ];
 
