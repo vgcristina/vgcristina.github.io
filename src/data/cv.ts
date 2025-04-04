@@ -42,6 +42,24 @@ export const education = [
 	},
 ];
 
+export const courses = [
+	{
+		school: '',
+		time: '',
+		degree: '',
+		location: '',
+		description: '',
+	},
+
+	{
+		school: 'Prueba',
+		time: '2025',
+		degree: 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma',
+		location: 'Sevilla, España',
+		description: 'Prueba',
+	},
+];
+
 export const skills = [
 	{
 		title: '',
