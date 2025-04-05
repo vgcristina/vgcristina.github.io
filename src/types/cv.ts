@@ -18,7 +18,6 @@ export interface Education {
 export interface Course {
   school: string;
   time: string;
-  hours: string;
   degree: string;
   location?: string;
   description?: string;
