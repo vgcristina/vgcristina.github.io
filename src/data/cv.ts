@@ -1,11 +1,4 @@
 export const experiences = [
-	{
-		company: '',
-		time: '',
-		title: '',
-		location: '',
-		description: '',
-	},
 	
 	{
 		company: 'Guadaltel',
@@ -17,14 +10,7 @@ export const experiences = [
 ];
 
 export const education = [
-	{
-		school: '',
-		time: '',
-		degree: '',
-		location: '',
-		description: '',
-	},
-
+	
 	{
 		school: 'Ilerna',
 		time: '2025',
@@ -72,14 +58,6 @@ export const skills = [
 ];
 
 export const courses = [
-	{
-		school: '',
-		time: '',
-		degree: '',
-		location: '',
-		description: '',
-	},
-
 
 	{
 		school: 'Udemy',
