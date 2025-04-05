@@ -42,6 +42,39 @@ export const education = [
 	},
 ];
 
+export const skills = [
+	{
+		title: '',
+		description: '',
+	},
+
+	 {
+	 	title: 'Java | Kotlin | Spring Boot básico',
+	 	description: 'Backend',
+	 },
+
+	 {
+		title: 'JSF | HTML | CSS',
+		description: 'Frontend',
+	},
+
+	{
+		title: 'MySQL | Firebase (NoSQL)',
+		description: 'Bases de datos',
+	},
+
+	 {
+		title: 'Eclipse | Android Studio | Hibernate | Maven | MySQL',
+		description: 'Entornos de desarrollo y herramientas',
+	},
+	
+	{
+		title: 'Spring Boot | Python',
+		description: 'Aprendiendo...',
+	},
+
+];
+
 export const courses = [
 	{
 		school: '',
@@ -194,23 +227,6 @@ export const courses = [
 		description: '330 horas',
 	},
 
-];
-
-export const skills = [
-	{
-		title: '',
-		description: '',
-	},
-
-	 {
-	 	title: 'Java',
-	 	description: 'Backend',
-	 },
-
-	 {
-		title: '',
-		description: '',
-	},
 ];
 
 export const publications = [
