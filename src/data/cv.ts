@@ -43,10 +43,6 @@ export const education = [
 ];
 
 export const skills = [
-	{
-		title: '',
-		description: '',
-	},
 
 	 {
 	 	title: 'Java | Kotlin | Spring Boot básico',
