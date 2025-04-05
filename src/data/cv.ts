@@ -49,7 +49,7 @@ export const courses = [
 		hours: '',
 		degree: '',
 		location: '',
-		//description: '',
+		description: '',
 	},
 
 
@@ -59,7 +59,7 @@ export const courses = [
 		hours: '150 horas',
 		degree: 'Java de cero a experto',
 		location: 'Online',
-		//description: '',
+		description: '150 horas',
 	},
 
 
@@ -69,7 +69,7 @@ export const courses = [
 		hours: '14 horas',
 		degree: 'Hibernate y JPA',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
@@ -79,7 +79,7 @@ export const courses = [
 		hours: '12 horas',
 		degree: 'Desarrollo de una API REST con Spring Boot',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 	
@@ -89,7 +89,7 @@ export const courses = [
 		hours: '9 horas',
 		degree: 'Clean Code',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
@@ -99,7 +99,7 @@ export const courses = [
 		hours: '8 horas',
 		degree: 'Desarrollo web con Java EE/Jakarta EE',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
@@ -109,7 +109,7 @@ export const courses = [
 		hours: '8 horas',
 		degree: 'Fundamenos de JavaScript',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
@@ -119,7 +119,7 @@ export const courses = [
 		hours: '7 horas',
 		degree: 'Git',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
@@ -129,7 +129,7 @@ export const courses = [
 		hours: '6 horas',
 		degree: 'Proyectos Java con Apache Maven',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
@@ -139,7 +139,7 @@ export const courses = [
 		hours: '5 horas',
 		degree: 'Testing en Java con JUnit 5',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
@@ -149,7 +149,7 @@ export const courses = [
 		hours: '4 horas',
 		degree: 'Introducción a Docker',
 		location: 'Online',
-		//description: '',
+		description: '',
 	},
 
 
