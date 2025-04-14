@@ -14,35 +14,29 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
 
     <div class="space-y-8">
       {
-        {
-  ALL_PAPERS.map((paper) => (
-    paper.title === "CineAtmos (APK)" ? (
-      <div class="card bg-base-200">
-        <div class="card-body">
-          <h2 class="card-title text-xl">{paper.title}</h2>
-          <p class="text-sm mb-3">
-            <span class="italic">{paper.journal}</span> • {paper.time}
-          </p>
-          <p class="text-sm text-base-content/80">{paper.abstract}</p>
-          <div class="card-actions justify-end mt-4">
-            <a href={paper.link} class="btn btn-sm btn-success text-white" download>
-              Descargar APK
-            </a>
+        ALL_PAPERS.map((paper) => (
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h2 class="card-title text-xl">
+                <a href={template.base + paper.link} class="hover:text-accent">
+                  {paper.title}
+                </a>
+              </h2>
+              <p class="text-sm mb-3">
+                <span class="italic">{paper.journal}</span> • {paper.time}
+              </p>
+              <p class="text-sm text-base-content/80">{paper.abstract}</p>
+              <div class="card-actions justify-end mt-4">
+                <a href={paper.link} class="btn btn-sm btn-success text-white" download>
+                Descargar APK
+              </a>
+                <a href={paper.link} class="btn btn-sm btn-secondary text-secondary-content">
+                  Leer más
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    ) : (
-      <ExpandableCard
-        title={paper.title}
-        journal={paper.journal}
-        time={paper.time}
-        abstract={paper.abstract}
-        client:load
-      />
-    )
-  ))
-}
-
+        ))
       }
     </div>
 
