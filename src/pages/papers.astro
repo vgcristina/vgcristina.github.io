@@ -1,11 +1,8 @@
 ---
+---
 import Layout from "@/layouts/Layout.astro";
 import { publications } from "@/data/cv";
-import { highlightAuthor } from "@/lib/utils";
-import {template} from "@/settings";
 import ExpandableCard from "@/components/ExpandableCard.jsx";
-
-const ALL_PAPERS = publications; // This will be replaced with dynamic data later
 ---
 
 <Layout title="Papers">
@@ -14,47 +11,27 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
 
     <div class="space-y-8">
       {
-        ALL_PAPERS.map((paper) => (
-          paper.title === "CineAtmos (APK)" ? (
-            <div class="card bg-base-200">
-              <div class="card-body">
-                <h2 class="card-title text-xl">{paper.title}</h2>
-                <p class="text-sm mb-3">
-                  <span class="italic">{paper.journal}</span> • {paper.time}
-                </p>
-                <p class="text-sm text-base-content/80">{paper.abstract}</p>
-                <div class="card-actions justify-end mt-4">
-                  <a href={paper.link} class="btn btn-sm btn-success text-white" download>
-                    Descargar APK
-                  </a>
-                </div>
-              </div>
-            </div>
-          ) : (
+        publications.map((paper) => (
           <ExpandableCard
-  title={paper.title}
-  journal={paper.journal}
-  time={paper.time}
-  abstract={paper.abstract}
-  extraButton={
-  paper.title === "CineAtmos (APK)" && (
-    <a
-      href={paper.link}
-      className="btn btn-sm btn-success text-white"
-      download
-    >
-      Descargar APK
-    </a>
-  )
-}
-
-  client:load
-/>
-
-          )
+            title={paper.title}
+            journal={paper.journal}
+            time={paper.time}
+            abstract={paper.abstract}
+            extraButton={
+              paper.title === "CineAtmos (APK)" ? (
+                <a
+                  href={paper.link}
+                  className="btn btn-sm btn-success text-white"
+                  download
+                >
+                  Descargar APK
+                </a>
+              ) : null
+            }
+            client:load
+          />
         ))
       }
-      
     </div>
 
     <div class="flex justify-center mt-8">
