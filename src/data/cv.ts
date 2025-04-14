@@ -209,15 +209,9 @@ export const publications = [
 		authors: '',
 		journal: '',
 		time: '2025',
-		link: '"/downloads/ProyectoCA.apk"',
+		link: '/downloads/ProyectoCA.apk',
 		abstract: 'CineAtmos es una aplicación móvil desarrollada en Kotlin que permite a los usuarios descubrir películas y series, además de interactuar entre ellos a modo de red social.\nIntegra la API de TMDb para obtener contenido actualizado del mundo del cine, y utliza Firebase para gestionar usuarios, publicaciones y la comunidad. \nInspirada en Letterboxd, ofrece una experiencia visual atractiva y funcionalidades sociales como listas personalizadas, likes, comentarios y seguimiento de visualizaciones.\nActualmente se encuentra en fase de desarrollo, pero pronto estará lista para su lanzamiento.',
 	},
-	// {
-	// 	title: 'The Radiation of Uranium Compounds',
-	// 	authors: 'Marie Curie',
-	// 	journal: 'Comptes Rendus de l’Académie des Sciences',
-	// 	time: '1898',
-	// 	link: '#',
-	// 	abstract: 'Early research leading to the identification of uranium’s radioactive properties.',
-	// },
+
+	
 ];
