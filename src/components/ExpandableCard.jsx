@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ExpandableCard({ title, journal, time, abstract }) {
+export default function ExpandableCard({ title, journal, time, abstract, extraButton }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -14,13 +14,14 @@ export default function ExpandableCard({ title, journal, time, abstract }) {
           {expanded ? abstract : abstract.slice(0, 100) + '...'}
         </p>
         <div className="card-actions justify-end mt-4">
-          <button
-            className="btn btn-sm btn-secondary text-secondary-content"
-            onClick={() => setExpanded(!expanded)}
-          >
-            {expanded ? 'Leer menos' : 'Leer más'}
-          </button>
-        </div>
+  {extraButton}
+  <button
+    className="btn btn-sm btn-secondary text-secondary-content"
+    onClick={() => setExpanded(!expanded)}
+  >
+    {expanded ? 'Leer menos' : 'Leer más'}
+  </button>
+</div>
       </div>
     </div>
   );
