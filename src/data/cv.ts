@@ -205,10 +205,10 @@ export const courses = [
 
 export const publications = [
 	{
-		title: '',
-		authors: '',
+		title: 'Prueba',
+		authors: 'prueba',
 		journal: '',
-		time: '',
+		time: 'prueba',
 		link: '',
 		abstract: '',
 	},
