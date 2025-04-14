@@ -205,12 +205,12 @@ export const courses = [
 
 export const publications = [
 	{
-		title: 'Prueba',
-		authors: 'prueba',
+		title: 'CineAtmos.',
+		authors: '',
 		journal: '',
-		time: 'prueba',
-		link: '',
-		abstract: '',
+		time: '2025',
+		link: 'prueba',
+		abstract: 'CineAtmos es una aplicación móvil desarrollada en Kotlin que permite a los usuarios descubrir películas y series, además de interactuar entre ellos a modo de red social.\nIntegra la API de TMDb para obtener contenido actualizado del mundo del cine, y utliza Firebase para gestionar usuarios, publicaciones y la comunidad. \nInspirada en Letterboxd, ofrece una experiencia visual atractiva y funcionalidades sociales como listas personalizadas, likes, comentarios y seguimiento de visualizaciones.\nActualmente se encuentra en fase de desarrollo, pero pronto estará lista para su lanzamiento.',
 	},
 	// {
 	// 	title: 'The Radiation of Uranium Compounds',
