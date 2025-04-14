@@ -31,13 +31,25 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
               </div>
             </div>
           ) : (
-            <ExpandableCard
-              title={paper.title}
-              journal={paper.journal}
-              time={paper.time}
-              abstract={paper.abstract}
-              client:load
-            />
+          <ExpandableCard
+  title={paper.title}
+  journal={paper.journal}
+  time={paper.time}
+  abstract={paper.abstract}
+  extraButton={
+    paper.title === "CineAtmos (APK)" && (
+      <a
+        href={paper.link}
+        class="btn btn-sm btn-success text-white"
+        download
+      >
+        Descargar APK
+      </a>
+    )
+  }
+  client:load
+/>
+
           )
         ))
       }
