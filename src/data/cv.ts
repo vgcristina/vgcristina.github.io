@@ -205,7 +205,7 @@ export const courses = [
 
 export const publications = [
 	{
-		title: 'CineAtmos.',
+		title: 'CineAtmos',
 		authors: '',
 		journal: '',
 		time: '2025',
