@@ -211,11 +211,10 @@ export const publications = [
 	  time: '2025',
 	  link: '/downloads/ProyectoCA.apk',
 	  abstract: `
-		<p>CineAtmos es una aplicación móvil desarrollada en Kotlin que permite a los usuarios descubrir películas y series, además de interactuar entre ellos a modo de red social.</p>
-		<p>Integra la API de TMDb para obtener contenido actualizado del mundo del cine, y utliza Firebase para gestionar usuarios, publicaciones y la comunidad.</p>
+		<p>CineAtmos es una aplicación móvil desarrollada en Kotlin que permite a los usuarios descubrir películas y series, además de interactuar entre ellos a modo de red social. Integra la API de TMDb para obtener contenido actualizado del mundo del cine, y utliza Firebase para gestionar usuarios, publicaciones y la comunidad.</p>
 		<p>Inspirada en Letterboxd, ofrece una experiencia visual atractiva y funcionalidades sociales como listas personalizadas, likes, comentarios y seguimiento de visualizaciones.</p>
 		<p>Actualmente se encuentra en fase de desarrollo, pero pronto estará lista para su lanzamiento.</p>
 	  `,
-	  images: ['/images/prueba.png']
+	//   images: ['/images/prueba.png']
 	},
   ];
