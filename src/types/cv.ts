@@ -46,9 +46,9 @@ export function isEducation(element: Education | Experience): element is Educati
   return 'school' in element && 'degree' in element;
 }
 
-// export function isSkill(element: Skill | Publication): element is Skill {
-//   return 'description' in element;
-// }
+export function isSkill(element: Skill | Publication): element is Skill {
+  return 'description' in element;
+}
 
 export function isPublication(element: Skill | Publication): element is Publication {
   return 'authors' in element;

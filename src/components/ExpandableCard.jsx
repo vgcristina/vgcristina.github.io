@@ -15,9 +15,10 @@ export default function ExpandableCard({ title, journal, time, abstract, link, i
         <p className="text-sm text-base-content/80">
           {expanded ? abstract : abstract.slice(0, 100) + '...'}
         </p>
+
         {images && images.length > 0 && (
-  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    {images.map((src, index) => (
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {images.map((src, index) => (
       <img key={index} src={src} alt={`Captura ${index + 1}`} className="rounded shadow-md" />
     ))}
   </div>

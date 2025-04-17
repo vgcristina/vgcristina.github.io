@@ -36,6 +36,17 @@ const { elements } = Astro.props
       </p>
       <p>{element.abstract}</p>
     }
+
+    {!isSkill(element) && element.images && element.images.length > 0 && (
+  <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {
+      element.images.map((src: string, i: number) => (
+        <img src={src} alt={`Captura ${i + 1}`} class="rounded shadow-md" />
+      ))
+    }
+  </div>
+)}
+
     {/* Uncomment this line to add a small border bottom for each element
     {index !== elements.length -1 && <hr class="mt-6 border-primary/40" />}  */}
     </li>
