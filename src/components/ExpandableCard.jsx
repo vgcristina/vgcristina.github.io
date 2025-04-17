@@ -12,17 +12,22 @@ export default function ExpandableCard({ title, journal, time, abstract, link, i
         <p className="text-sm mb-3">
           <span className="italic">{journal}</span> • {time}
         </p>
-        <p className="text-sm text-base-content/80">
-          {expanded ? abstract : abstract.slice(0, 100) + '...'}
-        </p>
+        <div className="text-sm text-base-content/80">
+          {expanded ? (
+            <div dangerouslySetInnerHTML={{ __html: abstract }} />
+          ) : (
+            <p>{abstract.slice(0, 100)}...</p>
+          )}
+        </div>
 
         {images && images.length > 0 && (
-      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {images.map((src, index) => (
-      <img key={index} src={src} alt={`Captura ${index + 1}`} className="rounded shadow-md" />
-    ))}
-  </div>
-)}
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {images.map((src, index) => (
+              <img key={index} src={src} alt={`Captura ${index + 1}`} className="rounded shadow-md" />
+            ))}
+          </div>
+        )}
+
         <div className="card-actions justify-end mt-4">
           <button
             className="btn btn-sm btn-secondary text-secondary-content"
@@ -34,19 +39,15 @@ export default function ExpandableCard({ title, journal, time, abstract, link, i
           {/* Botón de descarga del APK */}
           {link && (
             <a
-            href="/downloads/ProyectoCA.apk"
-            className="btn btn-sm btn-success text-secondary-content"
-            download="ProyectoCA.apk"
-          >
-            Descargar APK
-          </a>
+              href="/downloads/ProyectoCA.apk"
+              className="btn btn-sm btn-success text-secondary-content"
+              download="ProyectoCA.apk"
+            >
+              Descargar APK
+            </a>
           )}
         </div>
       </div>
     </div>
   );
 }
-
-
-
-
