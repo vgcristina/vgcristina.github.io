@@ -6,27 +6,27 @@ export const profile = {
 	research_areas: [
 		{
 			title: 'Backend',
-			description: 'Java | Kotlin | Spring Boot básico',
+			description: 'Java - Kotlin - Spring Boot básico',
 		},
    
 		{
 		   title: 'Frontend',
-		   description: 'JSF | HTML | CSS',
+		   description: 'JSF - HTML - CSS',
 	   },
    
 	   {
 		   title: 'Bases de datos',
-		   description: 'MySQL | Firebase (NoSQL)',
+		   description: 'MySQL - Firebase (NoSQL)',
 	   },
    
 		{
 		   title: 'Entornos de desarrollo y herramientas',
-		   description: 'Eclipse | Android Studio | Hibernate | Maven | MySQL',
+		   description: 'Eclipse - Android Studio - Hibernate - Maven - MySQL',
 	   },
 	   
 	   {
 		   title: 'Aprendiendo...',
-		   description: 'Spring Boot | Python',
+		   description: 'Spring Boot - Python',
 	   },
    
 	],
@@ -48,7 +48,7 @@ export const template = {
 	website_url: 'https://vgcristina.github.io', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
 	menu_left: false,
 	transitions: true,
-	lightTheme: 'light', // Select one of the Daisy UI Themes or create your own
+	lightTheme: 'corporate', // Select one of the Daisy UI Themes or create your own
 	darkTheme: 'dark', // Select one of the Daisy UI Themes or create your own
 	excerptLength: 200,
 	postPerPage: 5,
