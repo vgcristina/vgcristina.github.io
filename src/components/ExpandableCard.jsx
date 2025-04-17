@@ -12,13 +12,14 @@ export default function ExpandableCard({ title, journal, time, abstract, link, i
         <p className="text-sm mb-3">
           <span className="italic">{journal}</span> • {time}
         </p>
+
         <div className="text-sm text-base-content/80">
-          {expanded ? (
-            <div dangerouslySetInnerHTML={{ __html: abstract }} />
-          ) : (
-            <p>{abstract.slice(0, 100)}...</p>
-          )}
-        </div>
+  {expanded ? (
+    <div dangerouslySetInnerHTML={{ __html: formattedAbstract }} />
+  ) : (
+    <div dangerouslySetInnerHTML={{ __html: formattedAbstract.split('</p>')[0] + '...</p>' }} />
+  )}
+</div>
 
         {images && images.length > 0 && (
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
