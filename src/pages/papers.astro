@@ -12,24 +12,25 @@ import ExpandableCard from "@/components/ExpandableCard.jsx";
     <div class="space-y-8">
       {
         publications.map((paper) => (
-          <ExpandableCard
-            title={paper.title}
-            journal={paper.journal}
-            time={paper.time}
-            abstract={paper.abstract}
-            extraButton={
-              paper.title === "CineAtmos (APK)" ? (
-                <a
-                  href={paper.link}
-                  className="btn btn-sm btn-success text-white"
-                  download
-                >
-                  Descargar APK
-                </a>
-              ) : null
-            }
-            client:load
-          />
+        <ExpandableCard
+        client:load
+  title={paper.title}
+  journal={paper.journal}
+  time={paper.time}
+  abstract={paper.abstract}
+  extraButton={
+    paper.title === "CineAtmos" ? (
+      <a
+        href={paper.link}
+        class="btn btn-sm btn-success text-white"
+        download
+      >
+        Descargar APK
+      </a>
+    ) : null
+  }
+/>
+
         ))
       }
     </div>
