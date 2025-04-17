@@ -24,8 +24,14 @@ const { fullName, title, institute } = profile
 			profilePicture={ProfilePictures}
 		/>
 	</section>
-	<!-- Recent Publications -->
-	<section class='py-12 >
+
+	<!-- Competencias tecnicas -->
+	<section class='py-12 border-b'>
+		<Grid gridTitle='Competencias técnicas' gridItems={research_areas} />
+	</section>
+
+	<!-- Proyectos recientes -->
+	<section class='py-12 border-t'>
 		<ArticleList listTitle='Proyectos recientes' listItems={publications} />
 	</section>
 </Layout>
