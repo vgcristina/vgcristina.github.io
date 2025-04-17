@@ -35,6 +35,7 @@ export interface Publication {
   time: string;
   link?: string;
   abstract?: string;
+  images?: String;
 }
 
 export function isExperience(element: Experience | Education): element is Experience {
