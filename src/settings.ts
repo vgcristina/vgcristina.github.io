@@ -4,7 +4,31 @@ export const profile = {
 	institute: '',
 	author_name: '', // Author name to be highlighted in the papers section
 	research_areas: [
-		 { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+		{
+			title: 'Java | Kotlin | Spring Boot básico',
+			description: 'Backend',
+		},
+   
+		{
+		   title: 'JSF | HTML | CSS',
+		   description: 'Frontend',
+	   },
+   
+	   {
+		   title: 'MySQL | Firebase (NoSQL)',
+		   description: 'Bases de datos',
+	   },
+   
+		{
+		   title: 'Eclipse | Android Studio | Hibernate | Maven | MySQL',
+		   description: 'Entornos de desarrollo y herramientas',
+	   },
+	   
+	   {
+		   title: 'Spring Boot | Python',
+		   description: 'Aprendiendo...',
+	   },
+   
 	],
 }
 
