@@ -1,8 +1,8 @@
 ---
----
-import Layout from "@/layouts/Layout.astro";
-import { publications } from "@/data/cv";
 import ExpandableCard from "@/components/ExpandableCard.jsx";
+import { publications } from "@/data/cv";
+import { template } from "@/settings";
+const ALL_PAPERS = publications;
 ---
 
 <Layout title="Papers">
@@ -11,38 +11,34 @@ import ExpandableCard from "@/components/ExpandableCard.jsx";
 
     <div class="space-y-8">
       {
-        publications.map((paper) => (
-        <ExpandableCard
-        client:load
-  title={paper.title}
-  journal={paper.journal}
-  time={paper.time}
-  abstract={paper.abstract}
-  extraButton={
-    paper.title === "CineAtmos" ? (
-      <a
-        href={paper.link}
-        class="btn btn-sm btn-success text-white"
-        download
-      >
-        Descargar APK
-      </a>
-    ) : null
-  }
-/>
-
+        ALL_PAPERS.map((paper) => (
+          paper.title === "CineAtmos (APK)" ? (
+            <div class="card bg-base-200">
+              <div class="card-body">
+                <h2 class="card-title text-xl">{paper.title}</h2>
+                <p class="text-sm mb-3">
+                  <span class="italic">{paper.journal}</span> • {paper.time}
+                </p>
+                <p class="text-sm text-base-content/80">{paper.abstract}</p>
+                <div class="card-actions justify-end mt-4">
+                  <a href={paper.link} class="btn btn-sm btn-success text-white" download>
+                    Descargar APK
+                  </a>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <ExpandableCard
+              title={paper.title}
+              journal={paper.journal}
+              time={paper.time}
+              abstract={paper.abstract}
+              client:load
+            />
+          )
         ))
       }
     </div>
-
-    <div class="flex justify-center mt-8">
-      <div class="join">
-        <button class="join-item btn btn-sm">«</button>
-        <button class="join-item btn btn-sm">1</button>
-        <button class="join-item btn btn-sm btn-active">2</button>
-        <button class="join-item btn btn-sm">3</button>
-        <button class="join-item btn btn-sm">»</button>
-      </div>
-    </div>
   </div>
 </Layout>
+
