@@ -14,15 +14,15 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
 
     <div class="space-y-8">
       {
-        ALL_PAPERS.map((paper) => (
-        <ExpandableCard
-  title={paper.title}
-  journal={paper.journal}
-  time={paper.time}
-  abstract={paper.abstract}
-  link={paper.link}
-/>
-
+        publications.map((paper) => (
+          <ExpandableCard
+            title={paper.title}
+            journal={paper.journal}
+            time={paper.time}
+            abstract={paper.abstract}
+            link={paper.link}  // Se pasa el link para el botón de descarga
+            client:load
+          />
         ))
       }
     </div>
