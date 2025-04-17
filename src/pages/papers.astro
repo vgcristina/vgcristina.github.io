@@ -1,8 +1,10 @@
----
-import ExpandableCard from "@/components/ExpandableCard.jsx";
+se puede añadir aqui la apk de cineatmos?
+import Layout from "@/layouts/Layout.astro";
 import { publications } from "@/data/cv";
-import { template } from "@/settings";
-const ALL_PAPERS = publications;
+import { highlightAuthor } from "@/lib/utils";
+import {template} from "@/settings";
+
+const ALL_PAPERS = publications; // This will be replaced with dynamic data later
 ---
 
 <Layout title="Papers">
@@ -12,32 +14,36 @@ const ALL_PAPERS = publications;
     <div class="space-y-8">
       {
         ALL_PAPERS.map((paper) => (
-          paper.title === "CineAtmos" ? (
-            <div class="card bg-base-200">
-              <div class="card-body">
-                <h2 class="card-title text-xl">{paper.title}</h2>
-                <p class="text-sm mb-3">
-                  <span class="italic">{paper.journal}</span> • {paper.time}
-                </p>
-                <p class="text-sm text-base-content/80">{paper.abstract}</p>
-                <div class="card-actions justify-end mt-4">
-                  <a href={paper.link} class="btn btn-sm btn-success text-white" download>
-                    Descargar APK
-                  </a>
-                </div>
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h2 class="card-title text-xl">
+                <a href={template.base + paper.link} class="hover:text-accent">
+                  {paper.title}
+                </a>
+              </h2>
+              <p class="text-sm mb-3">
+                <span class="italic">{paper.journal}</span> • {paper.time}
+              </p>
+              <p class="text-sm text-base-content/80">{paper.abstract}</p>
+              <div class="card-actions justify-end mt-4">
+                <a href={paper.link} class="btn btn-sm btn-secondary text-secondary-content">
+                  Leer más
+                </a>
               </div>
             </div>
-          ) : (
-            <ExpandableCard
-              title={paper.title}
-              journal={paper.journal}
-              time={paper.time}
-              abstract={paper.abstract}
-              client:load
-            />
-          )
+          </div>
         ))
       }
+    </div>
+
+    <div class="flex justify-center mt-8">
+      <div class="join">
+        <button class="join-item btn btn-sm">«</button>
+        <button class="join-item btn btn-sm">1</button>
+        <button class="join-item btn btn-sm btn-active">2</button>
+        <button class="join-item btn btn-sm">3</button>
+        <button class="join-item btn btn-sm">»</button>
+      </div>
     </div>
   </div>
 </Layout>
