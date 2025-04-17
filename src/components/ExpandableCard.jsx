@@ -26,7 +26,7 @@ export default function ExpandableCard({ title, journal, time, abstract, link, i
     __html:
       formattedAbstract
         .split('</p>')
-        .slice(0, 2) // ← los dos primeros párrafos
+        .slice(0, 3) // ← los dos primeros párrafos
         .join('</p>') + '</p>',
   }}
 />
