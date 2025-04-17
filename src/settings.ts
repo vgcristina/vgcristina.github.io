@@ -5,28 +5,28 @@ export const profile = {
 	author_name: '', // Author name to be highlighted in the papers section
 	research_areas: [
 		{
-			title: 'Java | Kotlin | Spring Boot básico',
-			description: 'Backend',
+			title: 'Backend',
+			description: 'Java | Kotlin | Spring Boot básico',
 		},
    
 		{
-		   title: 'JSF | HTML | CSS',
-		   description: 'Frontend',
+		   title: 'Frontend',
+		   description: 'JSF | HTML | CSS',
 	   },
    
 	   {
-		   title: 'MySQL | Firebase (NoSQL)',
-		   description: 'Bases de datos',
+		   title: 'Bases de datos',
+		   description: 'MySQL | Firebase (NoSQL)',
 	   },
    
 		{
-		   title: 'Eclipse | Android Studio | Hibernate | Maven | MySQL',
-		   description: 'Entornos de desarrollo y herramientas',
+		   title: 'Entornos de desarrollo y herramientas',
+		   description: 'Eclipse | Android Studio | Hibernate | Maven | MySQL',
 	   },
 	   
 	   {
-		   title: 'Spring Boot | Python',
-		   description: 'Aprendiendo...',
+		   title: 'Aprendiendo...',
+		   description: 'Spring Boot | Python',
 	   },
    
 	],
