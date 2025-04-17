@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ExpandableCard({ title, journal, time, abstract, link }) {
+export default function ExpandableCard({ title, journal, time, abstract, link, images }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -15,6 +15,13 @@ export default function ExpandableCard({ title, journal, time, abstract, link })
         <p className="text-sm text-base-content/80">
           {expanded ? abstract : abstract.slice(0, 100) + '...'}
         </p>
+        {images && images.length > 0 && (
+  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {images.map((src, index) => (
+      <img key={index} src={src} alt={`Captura ${index + 1}`} className="rounded shadow-md" />
+    ))}
+  </div>
+)}
         <div className="card-actions justify-end mt-4">
           <button
             className="btn btn-sm btn-secondary text-secondary-content"
