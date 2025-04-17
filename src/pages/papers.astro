@@ -10,7 +10,7 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
 
 <Layout title="Papers">
   <div class="prose max-w-none">
-    <h1 class="text-3xl font-bold mb-8">Publications</h1>
+    <h1 class="text-3xl font-bold mb-8">Proyectos</h1>
 
     <div class="space-y-8">
       {
@@ -21,6 +21,7 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
             time={paper.time}
             abstract={paper.abstract}
             link={paper.link}  // Se pasa el link para el botón de descarga
+            images={paper.images}
             client:load
           />
         ))
