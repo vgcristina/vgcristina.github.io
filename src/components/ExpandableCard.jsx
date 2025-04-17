@@ -22,10 +22,14 @@ export default function ExpandableCard({ title, journal, time, abstract, link, i
     <div dangerouslySetInnerHTML={{ __html: formattedAbstract }} />
   ) : (
     <div
-      dangerouslySetInnerHTML={{
-        __html: formattedAbstract.split('</p>')[0] + '</p>',
-      }}
-    />
+  dangerouslySetInnerHTML={{
+    __html:
+      formattedAbstract
+        .split('</p>')
+        .slice(0, 2) // ← los dos primeros párrafos
+        .join('</p>') + '</p>',
+  }}
+/>
   )}
 </div>
 
