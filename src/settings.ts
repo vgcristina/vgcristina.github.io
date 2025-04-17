@@ -4,7 +4,7 @@ export const profile = {
 	institute: '',
 	author_name: '', // Author name to be highlighted in the papers section
 	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+		 { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
 }
 
