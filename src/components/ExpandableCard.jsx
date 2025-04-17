@@ -27,7 +27,7 @@ export default function ExpandableCard({ title, journal, time, abstract, link })
           {link && (
             <a
             href="/downloads/ProyectoCA.apk"
-            className="btn btn-sm btn-secondary text-secondary-content"
+            className="btn btn-sm btn-success text-secondary-content"
             download="ProyectoCA.apk"
           >
             Descargar APK
