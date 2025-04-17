@@ -26,12 +26,12 @@ export default function ExpandableCard({ title, journal, time, abstract, link })
           {/* Botón de descarga del APK */}
           {link && (
             <a
-              href={link}
-              className="btn btn-sm btn-success text-white ml-2"
-              download
-            >
-              Descargar APK
-            </a>
+            href="/downloads/ProyectoCA.apk"
+            className="btn btn-sm btn-success text-white ml-2"
+            download="ProyectoCA.apk"
+          >
+            Descargar APK
+          </a>
           )}
         </div>
       </div>
