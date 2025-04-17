@@ -20,7 +20,7 @@ export interface Course {
   time: string;
   degree: string;
   location?: string;
-  description?: string;
+  description?: string; 
 }
 
 export interface Skill {
@@ -35,7 +35,7 @@ export interface Publication {
   time: string;
   link?: string;
   abstract?: string;
-  images?: String;
+  images?: string[];
 }
 
 export function isExperience(element: Experience | Education): element is Experience {
