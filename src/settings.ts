@@ -56,7 +56,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
+	default_title: 'Portfolio de Cristina Varela',
+	default_description: 'Este es mi rincón personal donde voy actualizando todos mis logros como programadora',
 	default_image: '/images/astro-academia.png',
 }
